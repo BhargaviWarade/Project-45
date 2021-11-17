@@ -10,11 +10,11 @@ var coco,cocoS;
 
 
 function preload() {
-  backgroundImage = loadImage("assets/QuestionBg.jpg");
-  //startButtonImg = loadImage("assets/play.png");
-  bgMusic = loadSound("assets/Background_sound.mp3");
-  coco = loadImage("assets/Coco.gif");
-  cocoS = loadImage("assets/cocoSad.gif");
+  backgroundImage = loadImage("QuestionBg.jpg");
+  //startButtonImg = loadImage("play.png");
+  bgMusic = loadSound("Background_sound.mp3");
+  coco = loadImage("Coco.gif");
+  cocoS = loadImage("cocoSad.gif");
 }
 
 function setup() {
@@ -22,7 +22,7 @@ function setup() {
   database = firebase.database();
 
   // Creating mute button
-   muteButton = createImg('assets/Mute_button.png');
+   muteButton = createImg('Mute_button.png');
    muteButton.position(800,35);
    muteButton.size(60,60);
    muteButton.mouseClicked(mute);
